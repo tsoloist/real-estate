@@ -1,0 +1,13 @@
+.InfoCard {
+	display: inline-block;
+	width: 31%;
+	background-color: white;
+	margin-right: 30px;
+	position: relative;
+}
+.InfoCard:last-child {
+	margin-right: 0px;
+}
+button {
+	width: 100%;
+}
