@@ -1,33 +1,17 @@
-import React, {Component} from 'react';
-import './InfoCard.css';
+import React from 'react';
+import './InfoCard.css'
 
-class InfoCard extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			showInfoDetails: false
-		}
-	}
-
-	MoreInfoHandler = () => {
-		const doesShow = this.state.showInfoDetails;
-		this.setState({showInfoDetails: !doesShow});
-	}
-
-	render() {
-		return(props,
+const infoCard = (props) => {
+		return(
 			<div className="InfoCard">
-				<button onClick={this.MoreInfo}>{props.title}</button>
+				<button onClick={this.click}>{props.title}</button>
 				<div>
-					{this.state.showInfoDetails ?
-						props.children: null
-					}
+					{props.children}
 				</div>
 				
 			</div>
 		);
-	}
 }
 
 
-export default InfoCard;
+export default infoCard;
