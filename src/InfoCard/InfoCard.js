@@ -4,7 +4,7 @@ import './InfoCard.css'
 const infoCard = (props) => {
 		return(
 			<div className="InfoCard">
-				<button onClick={this.click}>{props.title}</button>
+				<button onClick={props.click}>{props.title}</button>
 				<div>
 					{props.children}
 				</div>

@@ -23,7 +23,7 @@ class App extends Component {
         <header className="App-header">
           <section id="hero1">
             <div className="info">
-              <InfoCard title={this.state.infoheadings[0].title}>
+              <InfoCard click={this.MoreInfoHandler} title={this.state.infoheadings[0].title}>
                 {this.state.showInfoDetails ? <p>Lenore Smith<br />Cell: 999-999-9999<br />address@address.com</p>: null}
               </InfoCard>
               <InfoCard title={this.state.infoheadings[1].title}>
