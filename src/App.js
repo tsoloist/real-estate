@@ -14,7 +14,8 @@ class App extends Component {
 
   MoreInfoHandler = () => {
     const doesShow = this.state.showInfoDetails;
-    this.setState({showInfoDetails: !doesShow})
+    this.setState({showInfoDetails: !doesShow});
+
   }
 
   render() {
@@ -24,10 +25,12 @@ class App extends Component {
           <section id="hero1">
             <div className="info">
               <InfoCard click={this.MoreInfoHandler} title={this.state.infoheadings[0].title}>
-                {this.state.showInfoDetails ? <p>Lenore Smith<br />Cell: 999-999-9999<br />address@address.com</p>: null}
+                {this.state.showInfoDetails ? 
+                  <p>Lenore Smith<br />Cell: 999-999-9999<br />address@address.com</p>: null}
               </InfoCard>
               <InfoCard click={this.MoreInfoHandler} title={this.state.infoheadings[1].title}>
-                {this.state.showInfoDetails ? <p>Search publicly available inventory below.Request access to unlisted properites.<br /><a href="">Send Request</a></p>: null}
+                {this.state.showInfoDetails ? 
+                  <p>Search publicly available inventory below.Request access to unlisted properites.<br /><a href="">Send Request</a></p>: null}
               </InfoCard>
               <InfoCard click={this.MoreInfoHandler} title={this.state.infoheadings[2].title} />
             </div>
