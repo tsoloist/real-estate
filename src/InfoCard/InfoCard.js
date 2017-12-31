@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './InfoCard.css'
 
 const infoCard = (props) => {
 		return(
 			<div className="InfoCard">
-				<button>{props.title}</button>
+				<button onClick={props.click}>{props.title}</button>
 				<div>
-					<p>Some content that will be toggleable.</p>
+					{props.children}
 				</div>
 				
 			</div>
