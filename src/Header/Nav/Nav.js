@@ -1,10 +1,11 @@
 import React from 'react';
 import './Nav.css';
+import Logo from '../../images/key-logo-wht.png';
 
 const nav = () => {
 	return(
 		<div className="Nav">
-			<img src="../images/key-logo-wht.png" />
+			<img src={Logo} />
 			<ul>
 				<li><a href="#">Investors</a></li>
 				<li><a href="#">Home Buyers/Sellers</a></li>

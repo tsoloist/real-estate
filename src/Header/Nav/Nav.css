@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 20px;
 }
+.Nav img {
+	width: 25%;
+}
 .Nav a {
 	display: inline-block;
 }
