@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import InfoCard from './InfoCard/InfoCard.js';
+import Nav from './Nav/Nav.js';
 
 class App extends Component {
   state = {
@@ -22,6 +23,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <section id="hero1">
+            <Nav />
             <div className="info">
               <InfoCard click={this.MoreInfoHandler} title={this.state.infoheadings[0].title}>
                 {this.state.showInfoDetails ? <p>Lenore Smith<br />Cell: 999-999-9999<br />address@address.com</p>: null}
@@ -29,7 +31,9 @@ class App extends Component {
               <InfoCard title={this.state.infoheadings[1].title}>
                 {this.state.showInfoDetails ? <p>Search publicly available inventory below.Request access to unlisted properites.<br /><a href="">Send Request</a></p>: null}
               </InfoCard>
-              <InfoCard title={this.state.infoheadings[2].title} />
+              <InfoCard title={this.state.infoheadings[2].title}>
+                {this.state.showInfoDetails ? <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus commodo bibendum. Fusce elit eros.</p>: null}
+              </InfoCard>
             </div>
           </section>
           <section id="hero2">
