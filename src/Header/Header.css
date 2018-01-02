@@ -15,6 +15,12 @@ header {
   margin:auto;
   padding-top: 100px;
 }
+/*.info button {
+  background-image: url(../images/contact.png);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 40px 40px;
+}*/
 #hero2 {
   height: 31%;
   text-align: center;
