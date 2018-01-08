@@ -3,6 +3,7 @@
 	margin: auto;
 	position: relative;
 	padding-top: 20px;
+	z-index: 100;
 }
 .Nav img {
 	width: 25%;

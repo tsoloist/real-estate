@@ -1,6 +1,7 @@
 header {
     height: 100%;
     position: relative;
+    top: -75px;
 }
 #hero1 {
   height: 69%;
@@ -15,13 +16,17 @@ header {
   margin:auto;
   padding-top: 100px;
 }
-/*.info button {
-  background-image: url(../images/contact.png);
+.info button {
   background-repeat: no-repeat;
   background-position: 3px center;
   background-size: 40px 40px;
-}*/
+}
 #hero2 {
   height: 31%;
+  text-align: center;
+}
+#Featured {
+  background-color: #cdbb9e;
+  padding: 50px 0;
   text-align: center;
 }
